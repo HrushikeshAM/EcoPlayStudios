@@ -12,13 +12,13 @@ function Navbar() {
 
       {/* Navigation Links */}
       <ul className="nav-links">
-        <li><a href="/">Home</a></li>
-        <li><a href="/currentgames">Current Games</a></li>
-        <li><a href="/upcominggames">Future Games</a></li>
-        <li><a href="/varahan">Varahan</a></li>
-        <li><a href="/about">About</a></li>
-        <li><a href="/investors">Investors</a></li>
-        <li><a href="/contact">Contact</a></li>
+        <li><a href="/EcoPlayStudios">Home</a></li>
+        <li><a href="/EcoPlayStudios/currentgames">Current Games</a></li>
+        <li><a href="/EcoPlayStudios/upcominggames">Future Games</a></li>
+        <li><a href="/EcoPlayStudios/varahan">Varahan</a></li>
+        <li><a href="/EcoPlayStudios/about">About</a></li>
+        <li><a href="/EcoPlayStudios/investors">Investors</a></li>
+        <li><a href="/EcoPlayStudios/contact">Contact</a></li>
       </ul>
 
       {/* Join Us Button */}

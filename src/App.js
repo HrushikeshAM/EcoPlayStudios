@@ -20,13 +20,13 @@ function App() {
         <Navbar />
         <main className="content">
           <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/currentgames" element={<CurrentGames />} />
-            <Route path="/upcominggames" element={<UpcomingGames />} />
-            <Route path="/varahan" element={<Varahan />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/investors" element={<Investors />} />
-            <Route path="/contact" element={<Contact />} />
+            <Route path="/EcoPlayStudios" element={<Home />} />
+            <Route path="/EcoPlayStudios/currentgames" element={<CurrentGames />} />
+            <Route path="/EcoPlayStudios/upcominggames" element={<UpcomingGames />} />
+            <Route path="/EcoPlayStudios/varahan" element={<Varahan />} />
+            <Route path="/EcoPlayStudios/about" element={<About />} />
+            <Route path="/EcoPlayStudios/investors" element={<Investors />} />
+            <Route path="/EcoPlayStudios/contact" element={<Contact />} />
           </Routes>
         </main>
         <Footer />
