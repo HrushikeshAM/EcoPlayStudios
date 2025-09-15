@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/HrushikeshAM/EcoPLayStudios/static/css/main.386cc794.css",
+    "main.js": "/HrushikeshAM/EcoPLayStudios/static/js/main.1487232b.js",
+    "static/js/453.840fbbff.chunk.js": "/HrushikeshAM/EcoPLayStudios/static/js/453.840fbbff.chunk.js",
+    "static/media/logo.png": "/HrushikeshAM/EcoPLayStudios/static/media/logo.8e668e3746fe01605907.png",
+    "index.html": "/HrushikeshAM/EcoPLayStudios/index.html",
+    "main.386cc794.css.map": "/HrushikeshAM/EcoPLayStudios/static/css/main.386cc794.css.map",
+    "main.1487232b.js.map": "/HrushikeshAM/EcoPLayStudios/static/js/main.1487232b.js.map",
+    "453.840fbbff.chunk.js.map": "/HrushikeshAM/EcoPLayStudios/static/js/453.840fbbff.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.386cc794.css",
+    "static/js/main.1487232b.js"
+  ]
+}
