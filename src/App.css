@@ -1,0 +1,230 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #fdfbf7;
+  color: #333;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background: #355e3b;
+  color: white;
+}
+.nav-links {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+.join-btn {
+  background: #a67c52;
+  border: none;
+  padding: 8px 16px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(to bottom, #355e3b, #6c9a8b);
+  color: white;
+}
+.hero-buttons button {
+  margin: 10px;
+  padding: 10px 20px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+.start-btn {
+  background: #a67c52;
+  color: white;
+}
+.trailer-btn {
+  background: white;
+  color: #355e3b;
+  border: 2px solid #355e3b;
+}
+
+/* Mission Section */
+.mission {
+  text-align: center;
+  padding: 60px 20px;
+}
+.mission-cards {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 30px;
+}
+.card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  width: 250px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Footer */
+.footer {
+  background: #2b2b2b;
+  color: white;
+  padding: 30px;
+  text-align: center;
+}
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+.social-icons a {
+  color: white;
+  margin: 0 8px;
+  font-size: 18px;
+}
+.footer-bottom {
+  border-top: 1px solid #444;
+  padding-top: 10px;
+  font-size: 14px;
+}
+\/* Varahan Preview */
+.varahan-preview {
+  text-align: center;
+  padding: 50px 20px;
+  background: #e7f4e4;
+  color: #355e3b;
+}
+.learn-btn {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background: #a67c52;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Impact Section */
+.impact {
+  text-align: center;
+  padding: 60px 20px;
+  background: #f7f5ef;
+}
+.impact-stats {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+}
+.stat {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  min-width: 150px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+.stat h3 {
+  color: #355e3b;
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+/* Join Us Section */
+.join-us {
+  text-align: center;
+  padding: 60px 20px;
+  background: #355e3b;
+  color: white;
+}
+.newsletter {
+  margin-top: 20px;
+}
+.newsletter input {
+  padding: 10px;
+  width: 250px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+.newsletter button {
+  padding: 10px 20px;
+  background: #a67c52;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+/* Navbar Container */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 40px;
+  background: #f4f3ee;
+  border-bottom: 2px solid #e0dcd5;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* Logo Styling */
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  gap: 10px;
+}
+.logo-img {
+  width: 10rem; /* Adjust for your logo size */
+  height: auto;
+}
+.logo-text {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #355e3b;
+}
+
+/* Navigation Links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+}
+.nav-links a {
+  text-decoration: none;
+  color: #3b3b3b;
+  font-weight: 500;
+  transition: color 0.2s ease-in-out;
+}
+.nav-links a:hover {
+  color: #355e3b;
+}
+
+/* Join Us Button */
+.join-btn {
+  background: #355e3b;
+  color: white;
+  padding: 8px 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.2s ease-in-out;
+}
+.join-btn:hover {
+  background: #2a472c;
+}
