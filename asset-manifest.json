@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/HrushikeshAM/EcoPlayStudios/static/css/main.386cc794.css",
-    "main.js": "/HrushikeshAM/EcoPlayStudios/static/js/main.c96ed284.js",
-    "static/js/453.840fbbff.chunk.js": "/HrushikeshAM/EcoPlayStudios/static/js/453.840fbbff.chunk.js",
-    "static/media/logo.png": "/HrushikeshAM/EcoPlayStudios/static/media/logo.8e668e3746fe01605907.png",
-    "index.html": "/HrushikeshAM/EcoPlayStudios/index.html",
-    "main.386cc794.css.map": "/HrushikeshAM/EcoPlayStudios/static/css/main.386cc794.css.map",
-    "main.c96ed284.js.map": "/HrushikeshAM/EcoPlayStudios/static/js/main.c96ed284.js.map",
-    "453.840fbbff.chunk.js.map": "/HrushikeshAM/EcoPlayStudios/static/js/453.840fbbff.chunk.js.map"
+    "main.css": "/EcoPlayStudios/static/css/main.386cc794.css",
+    "main.js": "/EcoPlayStudios/static/js/main.bc6304de.js",
+    "static/js/453.840fbbff.chunk.js": "/EcoPlayStudios/static/js/453.840fbbff.chunk.js",
+    "static/media/logo.png": "/EcoPlayStudios/static/media/logo.8e668e3746fe01605907.png",
+    "index.html": "/EcoPlayStudios/index.html",
+    "main.386cc794.css.map": "/EcoPlayStudios/static/css/main.386cc794.css.map",
+    "main.bc6304de.js.map": "/EcoPlayStudios/static/js/main.bc6304de.js.map",
+    "453.840fbbff.chunk.js.map": "/EcoPlayStudios/static/js/453.840fbbff.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.386cc794.css",
-    "static/js/main.c96ed284.js"
+    "static/js/main.bc6304de.js"
   ]
 }
