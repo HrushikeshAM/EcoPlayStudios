@@ -3,10 +3,11 @@ import logo from "./logo.png";
 
 function Navbar() {
   const [scrolled, setScrolled] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      setScrolled(window.scrollY > 50); // if scrolled more than 50px
+      setScrolled(window.scrollY > 50);
     };
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
@@ -14,13 +15,14 @@ function Navbar() {
 
   return (
     <nav className={`navbar ${scrolled ? "scrolled" : ""}`}>
+      {/* Logo */}
       <a href="/" className="navbar-logo">
         <img src={logo} alt="Eco Play Studios Logo" className="logo-img" />
         <span className="logo-text">Eco Play Studios</span>
       </a>
 
-      {/* 🔥 apply scrolled class dynamically to nav-links */}
-      <ul className={`nav-links ${scrolled ? "scrolled" : ""}`}>
+      {/* Nav Links */}
+      <ul className={`nav-links ${scrolled ? "scrolled" : ""} ${menuOpen ? "open" : ""}`}>
         <li><a href="/EcoPlayStudios">Home</a></li>
         <li><a href="/EcoPlayStudios/currentgames">Current Games</a></li>
         <li><a href="/EcoPlayStudios/upcominggames">Future Games</a></li>
@@ -30,7 +32,18 @@ function Navbar() {
         <li><a href="/EcoPlayStudios/contact">Contact</a></li>
       </ul>
 
+      {/* Join Button (hide on mobile if needed) */}
       <button className="join-btn">Join Us</button>
+
+      {/* Hamburger */}
+      <div
+        className={`hamburger ${menuOpen ? "active" : ""}`}
+        onClick={() => setMenuOpen(!menuOpen)}
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </nav>
   );
 }
