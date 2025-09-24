@@ -1,16 +1,21 @@
 {
   "files": {
-    "main.css": "/EcoPlayStudios/static/css/main.386cc794.css",
-    "main.js": "/EcoPlayStudios/static/js/main.18603223.js",
+    "main.css": "/EcoPlayStudios/static/css/main.e9703f53.css",
+    "main.js": "/EcoPlayStudios/static/js/main.16788241.js",
     "static/js/453.840fbbff.chunk.js": "/EcoPlayStudios/static/js/453.840fbbff.chunk.js",
+    "static/media/coin.png": "/EcoPlayStudios/static/media/coin.708e6f86ecc3d83ba1af.png",
     "static/media/logo.png": "/EcoPlayStudios/static/media/logo.8e668e3746fe01605907.png",
+    "static/media/news3.png": "/EcoPlayStudios/static/media/news3.b33380d08bbf62057342.png",
+    "static/media/news2.png": "/EcoPlayStudios/static/media/news2.43fe1903e2292f8df231.png",
+    "static/media/news1.png": "/EcoPlayStudios/static/media/news1.dd1c32d57cd3b79ea31f.png",
+    "static/media/hero.png": "/EcoPlayStudios/static/media/hero.982b4b24522b8ee8e728.png",
     "index.html": "/EcoPlayStudios/index.html",
-    "main.386cc794.css.map": "/EcoPlayStudios/static/css/main.386cc794.css.map",
-    "main.18603223.js.map": "/EcoPlayStudios/static/js/main.18603223.js.map",
+    "main.e9703f53.css.map": "/EcoPlayStudios/static/css/main.e9703f53.css.map",
+    "main.16788241.js.map": "/EcoPlayStudios/static/js/main.16788241.js.map",
     "453.840fbbff.chunk.js.map": "/EcoPlayStudios/static/js/453.840fbbff.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.386cc794.css",
-    "static/js/main.18603223.js"
+    "static/css/main.e9703f53.css",
+    "static/js/main.16788241.js"
   ]
 }
