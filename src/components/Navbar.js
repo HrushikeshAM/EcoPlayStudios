@@ -1,17 +1,26 @@
-import React from "react";
-import logo from "./logo.png"; // ✅ Change to your JPG logo path
+import React, { useEffect, useState } from "react";
+import logo from "./logo.png";
 
 function Navbar() {
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 50); // if scrolled more than 50px
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <nav className="navbar">
-      {/* Logo + Brand Name */}
+    <nav className={`navbar ${scrolled ? "scrolled" : ""}`}>
       <a href="/" className="navbar-logo">
         <img src={logo} alt="Eco Play Studios Logo" className="logo-img" />
         <span className="logo-text">Eco Play Studios</span>
       </a>
 
-      {/* Navigation Links */}
-      <ul className="nav-links">
+      {/* 🔥 apply scrolled class dynamically to nav-links */}
+      <ul className={`nav-links ${scrolled ? "scrolled" : ""}`}>
         <li><a href="/EcoPlayStudios">Home</a></li>
         <li><a href="/EcoPlayStudios/currentgames">Current Games</a></li>
         <li><a href="/EcoPlayStudios/upcominggames">Future Games</a></li>
@@ -21,7 +30,6 @@ function Navbar() {
         <li><a href="/EcoPlayStudios/contact">Contact</a></li>
       </ul>
 
-      {/* Join Us Button */}
       <button className="join-btn">Join Us</button>
     </nav>
   );

@@ -8,7 +8,11 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <App />
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Ink:wght@100..900&family=Bitcount:wght@100..900&family=Bungee&family=Caveat:wght@400..700&family=Dongle&family=Gruppo&family=Permanent+Marker&display=swap');
+</style>
   </React.StrictMode>
+  
 );
 
 // If you want to start measuring performance in your app, pass a function

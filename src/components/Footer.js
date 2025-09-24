@@ -18,9 +18,9 @@ function Footer() {
         <div className="footer-links">
           <div>
             <h4>Games</h4>
-            <p>Trash-to-Treasure</p>
-            <p>Ocean Cleanup</p>
-            <p>Carbon Quest</p>
+            <p>Recycle Rush</p>
+            <p>Rooftop Farming</p>
+            <p>Kitchen Farming</p>
           </div>
           <div>
             <h4>Company</h4>
