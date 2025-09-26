@@ -1,10 +1,70 @@
 import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination, Mousewheel } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 import news1 from "../assets/images/news1.png";
 import news2 from "../assets/images/news2.png";
 import news3 from "../assets/images/news3.png";
 import varahan from "../assets/images/coin.png"
 
 function Home() {
+    const gamesItems = [
+    {
+      img: news1, // replace later with real game image
+      title: "RecycleRush",
+      desc: "Sort waste, earn rewards, and join the eco-movement. Our flagship recycling challenge is live now!",
+      link: "#", // later add Play Store / itch.io link
+      comingSoon: false,
+    },
+    {
+      img: news2,
+      title: "Rooftop Farming",
+      desc: "Experience sustainable farming in the city! Grow crops, manage resources, and build your green rooftop.",
+      link: "#",
+      comingSoon: true,
+    },
+    {
+      img: news3,
+      title: "Kitchen Garden",
+      desc: "Transform your kitchen scraps into a thriving garden. Learn eco-friendly habits through interactive play.",
+      link: "#",
+      comingSoon: true,
+    },
+    
+  ];
+
+    const newsItems = [
+    {
+      img: news1,
+      tag: "GAME RELEASE",
+      date: "9/24/2025",
+      title: "RecycleRush v1.0 Officially Launched",
+      desc: "Our flagship eco-gaming experience is here! Start sorting waste, earn rewards, and join the movement to turn play into real-world environmental impact.",
+    },
+    {
+      img: news2,
+      tag: "UPCOMING",
+      date: "Coming Soon",
+      title: "Rooftop Farming & Kitchen Garden",
+      desc: "Two new eco-games are in the works! One brings rooftop farming to life, while Kitchen Garden explores kitchen farming in a fun, interactive way.",
+    },
+    {
+      img: news3,
+      tag: "COMMUNITY",
+      date: "9/18/2025",
+      title: "Varahan (VR Coin) Community Update",
+      desc: "Varahan is evolving! More ways to earn, collect, and showcase your VR Coins are on the horizon, giving our players a glimpse into a connected eco-reward future.",
+    },
+      {
+    img: news3, // you can replace with a proper investor-related image later
+    tag: "INVESTORS",
+    date: "9/20/2025",
+    title: "EcoPlay Studios Investor Briefing",
+    desc: "Exciting opportunities ahead! Our growth roadmap, eco-reward model, and player-driven impact initiatives open doors for investors to join us in building a sustainable gaming future.",
+  },
+  ];
   return (
     <div className="home">
 
@@ -19,52 +79,79 @@ function Home() {
 
       {/* Latest News Section */}
 <section className="latest-news">
-  <div className="news-header">
-    <h2>The Latest</h2>
-    <a href="/EcoPlayStudios/news" className="news-link">Go To News Page →</a>
-  </div>
-
-  <div className="news-grid">
-    {/* News 1 */}
-    <div className="news-card">
-      <img src={news1} alt="RecycleRush Launch" />
-      <div className="news-content">
-        <span className="news-tag">GAME RELEASE</span> | <span>9/24/2025</span>
-        <h3>RecycleRush v1.0 Officially Launched</h3>
-        <p>
-          Our flagship eco-gaming experience is here! Start sorting waste, earn rewards, 
-          and join the movement to turn play into real-world environmental impact.
-        </p>
+      <div className="news-header">
+        <h2>The Latest</h2>
+        <a href="/EcoPlayStudios/news" className="news-link">
+          Go To News Page →
+        </a>
       </div>
-    </div>
 
-    {/* News 2 */}
-    <div className="news-card">
-      <img src={news2} alt="Upcoming Games" />
-      <div className="news-content">
-        <span className="news-tag">UPCOMING</span> | <span>Coming Soon</span>
-        <h3>Rooftop Farming & Kitchen Garden</h3>
-        <p>
-          Two new eco-games are in the works! one brings rooftop farming to life, 
-          while Kitchen Garden explores kitchen farming in a fun, interactive way.
-        </p>
-      </div>
-    </div>
+      <Swiper
+        modules={[Navigation, Pagination, Mousewheel]} // ✅ include Mousewheel
+        spaceBetween={20}
+        navigation
+        pagination={{ type: "progressbar" }} // ✅ bar pagination
+        mousewheel={{ forceToAxis: true }} // ✅ scroll horizontally instead of vertically
+        breakpoints={{
+          0: { slidesPerView: 1 },   // mobile → 1 card
+          768: { slidesPerView: 3 }, // desktop → 3 cards
+        }}
+        grabCursor={true} // ✅ makes it draggable
+      >
+        {newsItems.map((item, index) => (
+          <SwiperSlide key={index}>
+            <div className="news-card">
+              <img src={item.img} alt={item.title} />
+              <div className="news-content">
+                <span className="news-tag">{item.tag}</span> |{" "}
+                <span>{item.date}</span>
+                <h3>{item.title}</h3>
+                <p>{item.desc}</p>
+              </div>
+            </div>
+          </SwiperSlide>
+        ))}
+      </Swiper>
+    </section>
+    {/* Play Our Games Section */}
+    <section className="games">
+      <h2>Play Our Games</h2>
+      <p className="games-text">
+        Explore our growing library of eco-themed games. Each game is designed 
+        to be fun, rewarding, and impactful — helping you make a difference 
+        while you play.
+      </p>
 
-    {/* News 3 */}
-    <div className="news-card">
-      <img src={news3} alt="Varahan Update" />
-      <div className="news-content">
-        <span className="news-tag">COMMUNITY</span> | <span>9/18/2025</span>
-        <h3>Varahan (VR Coin) Community Update</h3>
-        <p>
-          Varahan is evolving! More ways to earn, collect, and showcase your VR Coins are 
-          on the horizon, giving our players a glimpse into a connected eco-reward future.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
+      <Swiper
+        modules={[Navigation, Pagination, Mousewheel]}
+        spaceBetween={20}
+        navigation
+        pagination={{ type: "progressbar" }}
+        mousewheel={{ forceToAxis: true }}
+        breakpoints={{
+          0: { slidesPerView: 1 },   // mobile → 1 card
+          768: { slidesPerView: 3 }, // desktop → 3 cards
+        }}
+        grabCursor={true}
+      >
+        {gamesItems.map((game, index) => (
+          <SwiperSlide key={index}>
+            <div className="game-card">
+              <img src={game.img} alt={game.title} />
+              <h3>{game.title}</h3>
+              <p>{game.desc}</p>
+              <a 
+                href={game.link || "#"} 
+                className={`game-btn ${game.comingSoon ? "disabled" : ""}`}
+              >
+                {game.comingSoon ? "Coming Soon" : "Play Now →"}
+              </a>
+            </div>
+          </SwiperSlide>
+        ))}
+      </Swiper>
+    </section>
+
 
       <section className="mission">
         <h2>Our Mission</h2>
@@ -119,6 +206,7 @@ function Home() {
     {/* Center: Text */}
     <div className="varahan-text">
       <h2>Varahan (VR Coin)</h2>
+      <p className="sanskrit-quote">अश्वक्यम् प्रकृते श्रुते जीवनम्</p>
       <p>
         Varahan is our unique eco-reward coin, earned by completing levels, 
         taking part in daily challenges, and contributing to community goals. 
@@ -134,6 +222,42 @@ function Home() {
     </div>
   </div>
 </section>
+    {/* Investors Section */}
+    <section className="investors">
+      <h2>For Our Investors</h2>
+      <p className="investors-text">
+        At EcoPlayStudios, we believe in building not only eco-friendly games 
+        but also a sustainable business ecosystem. We welcome forward-thinking 
+        investors to join our journey of combining entertainment with 
+        real-world environmental impact.
+      </p>
+
+      {/* Stats Row */}
+      <div className="investors-stats">
+        <div className="stat-box">
+          <h3>10K+</h3>
+          <p>Active Players</p>
+        </div>
+        <div className="stat-box">
+          <h3>3</h3>
+          <p>Games in Development</p>
+        </div>
+        <div className="stat-box">
+          <h3>150+</h3>
+          <p>Community Partners</p>
+        </div>
+      </div>
+
+      {/* CTA Buttons */}
+      <div className="investors-actions">
+        <a href="/EcoPlayStudios/investors" className="invest-btn">Learn More →</a>
+        <a href="mailto:contact@ecoplaystudios.com" className="invest-btn secondary">Contact Us</a>
+        <a href="/EcoPlayStudios/investors-deck.pdf" className="invest-btn pitch" target="_blank" rel="noopener noreferrer">
+          Download Pitch Deck
+        </a>
+      </div>
+    </section>
+
 {/* Impact Stats Section */}
 <section className="impact">
   <h2>Our Predicted Impact</h2>
