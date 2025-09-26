@@ -87,7 +87,7 @@ function Home() {
       </div>
 
       <Swiper
-        modules={[Navigation, Pagination, Mousewheel]} // ✅ include Mousewheel
+        modules={[Pagination, Mousewheel]} // ✅ include Mousewheel
         spaceBetween={20}
         navigation
         pagination={{ type: "progressbar" }} // ✅ bar pagination
@@ -123,7 +123,7 @@ function Home() {
       </p>
 
       <Swiper
-        modules={[Navigation, Pagination, Mousewheel]}
+        modules={[Pagination, Mousewheel]}
         spaceBetween={20}
         navigation
         pagination={{ type: "progressbar" }}
