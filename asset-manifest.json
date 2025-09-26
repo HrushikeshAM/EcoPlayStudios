@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/EcoPlayStudios/static/css/main.606fd1ee.css",
+    "main.css": "/EcoPlayStudios/static/css/main.5adf81a2.css",
     "main.js": "/EcoPlayStudios/static/js/main.38a180a7.js",
     "static/js/453.840fbbff.chunk.js": "/EcoPlayStudios/static/js/453.840fbbff.chunk.js",
     "static/media/coin.png": "/EcoPlayStudios/static/media/coin.708e6f86ecc3d83ba1af.png",
@@ -10,12 +10,12 @@
     "static/media/news1.png": "/EcoPlayStudios/static/media/news1.dd1c32d57cd3b79ea31f.png",
     "static/media/hero.png": "/EcoPlayStudios/static/media/hero.982b4b24522b8ee8e728.png",
     "index.html": "/EcoPlayStudios/index.html",
-    "main.606fd1ee.css.map": "/EcoPlayStudios/static/css/main.606fd1ee.css.map",
+    "main.5adf81a2.css.map": "/EcoPlayStudios/static/css/main.5adf81a2.css.map",
     "main.38a180a7.js.map": "/EcoPlayStudios/static/js/main.38a180a7.js.map",
     "453.840fbbff.chunk.js.map": "/EcoPlayStudios/static/js/453.840fbbff.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.606fd1ee.css",
+    "static/css/main.5adf81a2.css",
     "static/js/main.38a180a7.js"
   ]
 }
