@@ -777,12 +777,6 @@
       padding: 0.4rem 0.8rem;
       font-size: 0.9rem;
     }
-
-    /* Hero */
-    .hero {
-      padding: 4rem 1rem;
-    }
-
     .hero h1 {
       font-size: clamp(2rem, 8vw, 4rem); /* scale text */
       line-height: 1.2;
